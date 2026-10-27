@@ -1,0 +1,32 @@
+🚀 Nome do Projeto: Barbearia O Patriarca
+
+📅 Data de Criação: 27/10/2026
+📌 Finalidade: Site institucional / landing page de uma barbearia real da zona leste de SP
+
+---
+
+📌 DESCRIÇÃO GERAL
+- Página única com serviços e preços, portfólio com lightbox, sobre, avaliações,
+  localização com mapa e botões de agendamento (Booksy) e WhatsApp.
+- Objetivo: presença digital própria, SEO local e mais agendamentos.
+- Status: pronto para revisão com o dono (faltam fotos reais e dados a confirmar).
+
+---
+
+🛠 TECNOLOGIAS UTILIZADAS
+✅ HTML5 semântico + JSON-LD (schema.org BarberShop)
+✅ CSS3 puro, mobile-first
+✅ JavaScript puro (sem bibliotecas)
+✅ GoatCounter (medição sem cookies, opcional)
+✅ GitHub Pages (hospedagem)
+✅ Python + Pillow (só para gerar imagens provisórias)
+
+---
+
+📁 ESTRUTURA DO PROJETO
+📄 index.html → página principal
+📂 assets/css/ → estilos
+📂 assets/js/ → interações e configuração
+📂 assets/img/ → fotos, ícones e imagem de compartilhamento
+📂 scripts/ → gerador de imagens provisórias
+📂 documentação/ → publicar, editar, medir, checklist com o dono

@@ -1,0 +1,18 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Python (script de imagens)
+__pycache__/
+*.pyc
+
+# Nunca suba segredos
+.env
+.env.*
+*.pem
+*.key

@@ -1,0 +1,6 @@
+# Libera todos os buscadores e aponta o mapa do site.
+# TROCAR o endereço se usar outro usuário do GitHub ou domínio próprio.
+User-agent: *
+Allow: /
+
+Sitemap: https://passetti-cmd.github.io/barbearia-o-patriarca/sitemap.xml

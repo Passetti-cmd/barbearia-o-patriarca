@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!--
+    ============================================================
+    SEGURANÇA
+    Política de conteúdo (CSP): o navegador só carrega scripts,
+    fontes, imagens e iframes das origens listadas abaixo.
+    Se um dia adicionar outro serviço externo, inclua a origem aqui.
+    ============================================================
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://gc.zgo.at; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.goatcounter.com; connect-src 'self' https://*.goatcounter.com; frame-src https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- ============================================================
+       SEO LOCAL — título e descrição que aparecem no Google
+       ============================================================ -->
+  <title>Barbearia O Patriarca | Barbearia na Cidade Patriarca, Zona Leste de SP</title>
+  <meta name="description" content="Barbearia na Cidade Patriarca, zona leste de SP, perto do metrô Patriarca. Corte masculino clássico e moderno, barba e barboterapia. Nota 4,9 no Google. Agende online.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <!-- TROCAR: endereço final do site no GitHub Pages (ou domínio próprio) -->
+  <link rel="canonical" href="https://passetti-cmd.github.io/barbearia-o-patriarca/">
+
+  <!-- Geolocalização (ajuda buscadores a entender a região) -->
+  <meta name="geo.region" content="BR-SP">
+  <meta name="geo.placename" content="Cidade Patriarca, São Paulo">
+  <meta name="geo.position" content="-23.5317;-46.5005">
+  <meta name="ICBM" content="-23.5317, -46.5005">
+
+  <!-- Cor da barra do navegador no celular -->
+  <meta name="theme-color" content="#0d0c0b">
+  <meta name="color-scheme" content="dark">
+
+  <!-- ============================================================
+       OPEN GRAPH / TWITTER — prévia bonita no WhatsApp e redes
+       ============================================================ -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Barbearia O Patriarca">
+  <meta property="og:title" content="Barbearia O Patriarca — Cidade Patriarca, Zona Leste SP">
+  <meta property="og:description" content="Corte clássico e moderno, barba e barboterapia perto do metrô Patriarca. Nota 4,9 no Google. Agende pelo Booksy ou WhatsApp.">
+  <meta property="og:url" content="https://passetti-cmd.github.io/barbearia-o-patriarca/">
+  <meta property="og:image" content="https://passetti-cmd.github.io/barbearia-o-patriarca/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Barbearia O Patriarca — nota 4,9 no Google, Cidade Patriarca, zona leste de São Paulo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Barbearia O Patriarca — Cidade Patriarca, Zona Leste SP">
+  <meta name="twitter:description" content="Corte clássico e moderno, barba e barboterapia perto do metrô Patriarca. Nota 4,9 no Google.">
+  <meta name="twitter:image" content="https://passetti-cmd.github.io/barbearia-o-patriarca/assets/img/og-image.jpg">
+
+  <!-- Ícones -->
+  <link rel="icon" href="assets/img/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/icons/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Fontes: Big Shoulders (títulos), Instrument Serif (detalhes), Manrope (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+
+  <!-- ============================================================
+       DADOS ESTRUTURADOS (schema.org / BarberShop)
+       Google lê isso para montar o painel da empresa na busca.
+       CONFIRMAR: horários (openingHoursSpecification) e geo
+       (latitude/longitude: pegue no Google Maps clicando com o
+       botão direito no pin da barbearia).
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "@id": "https://passetti-cmd.github.io/barbearia-o-patriarca/#barbearia",
+    "name": "Barbearia O Patriarca",
+    "description": "Barbearia na Cidade Patriarca, zona leste de São Paulo, perto do metrô Patriarca. Corte de cabelo masculino clássico e moderno, barba, barboterapia e acabamento.",
+    "url": "https://passetti-cmd.github.io/barbearia-o-patriarca/",
+    "image": "https://passetti-cmd.github.io/barbearia-o-patriarca/assets/img/og-image.jpg",
+    "logo": "https://passetti-cmd.github.io/barbearia-o-patriarca/assets/img/icons/icon-512.png",
+    "telephone": "+55-11-94729-6481",
+    "priceRange": "R$ 20 - R$ 90",
+    "currenciesAccepted": "BRL",
+    "paymentAccepted": "Dinheiro, Pix, Cartão",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Lavras, 28 - Cidade Patriarca",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "03544-120",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.5317,
+      "longitude": -46.5005
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=Barbearia%20O%20Patriarca%20R.%20Lavras%2028%20S%C3%A3o%20Paulo",
+    "areaServed": [
+      { "@type": "Place", "name": "Cidade Patriarca" },
+      { "@type": "Place", "name": "Vila Matilde" },
+      { "@type": "Place", "name": "Artur Alvim" },
+      { "@type": "Place", "name": "Penha" },
+      { "@type": "Place", "name": "Zona Leste de São Paulo" }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "10:00",
+        "closes": "20:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "251",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "sameAs": [
+      "https://www.instagram.com/barbearia_o_patriarca/",
+      "https://booksy.com/pt-br/1047773_barbearia-o-patriarca_barbearias_3081_sao-paulo"
+    ],
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "target": "https://booksy.com/pt-br/1047773_barbearia-o-patriarca_barbearias_3081_sao-paulo",
+      "name": "Agendar horário"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços",
+      "itemListElement": [
+        { "@type": "Offer", "price": "50.00", "priceCurrency": "BRL", "itemOffered": { "@type": "Service", "name": "Corte de cabelo masculino" } },
+        { "@type": "Offer", "price": "80.00", "priceCurrency": "BRL", "itemOffered": { "@type": "Service", "name": "Combo corte + barba" } },
+        { "@type": "Offer", "price": "55.00", "priceCurrency": "BRL", "itemOffered": { "@type": "Service", "name": "Corte infantil (0 a 10 anos)" } },
+        { "@type": "Offer", "price": "55.00", "priceCurrency": "BRL", "itemOffered": { "@type": "Service", "name": "Degradê navalhado ou shaver" } },
+        { "@type": "Offer", "price": "45.00", "priceCurrency": "BRL", "itemOffered": { "@type": "Service", "name": "Barba" } },
+        { "@type": "Offer", "price": "75.00", "priceCurrency": "BRL", "itemOffered": { "@type": "Service", "name": "Barboterapia (vapor e lâmina)" } }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Sprite de ícones SVG: cada ícone é usado com <use href="#i-nome"> -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.37l-.36-.22-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.41"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></g></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.6 2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17.2l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+    <symbol id="i-train" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 14.2h.01M15 14.2h.01M8 21l2-4M16 21l-2-4"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m15 5-7 7 7 7"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-razor" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 38 12l8 8-28 28z"/><path d="M38 12c4-4 10-4 14 0s4 10 0 14l-6-6"/><path d="M18 48l-6 6M14 36l14 14"/></g></symbol>
+  </svg>
+
+  <!-- Atalho para quem navega por teclado / leitor de tela -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============================================================
+       CABEÇALHO
+       ============================================================ -->
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Barbearia O Patriarca — início">
+        <span class="brand__mark" aria-hidden="true">P</span>
+        <span class="brand__text">O Patriarca<small>Barbearia</small></span>
+      </a>
+
+      <nav class="nav" id="menu" aria-label="Principal" data-nav>
+        <ul class="nav__list">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#localizacao">Como chegar</a></li>
+        </ul>
+        <a class="btn btn--gold nav__cta-mobile"
+           href="https://booksy.com/pt-br/1047773_barbearia-o-patriarca_barbearias_3081_sao-paulo"
+           target="_blank" rel="noopener noreferrer"
+           data-goatcounter-click="agendar-booksy" data-goatcounter-title="Menu mobile">
+          <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Agendar horário
+        </a>
+      </nav>
+
+      <a class="btn btn--gold btn--sm header__cta"
+         href="https://booksy.com/pt-br/1047773_barbearia-o-patriarca_barbearias_3081_sao-paulo"
+         target="_blank" rel="noopener noreferrer"
+         data-goatcounter-click="agendar-booksy" data-goatcounter-title="Cabeçalho">Agendar</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+        <span class="sr-only" data-menu-label>Abrir menu</span>
+        <span class="menu-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============================================================
+         01 · HERO
+         ============================================================ -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow" data-reveal>
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            Cidade Patriarca · Zona Leste · SP
+          </p>
+
+          <h1 class="hero__title" id="titulo-principal" data-reveal>
+            <span class="hero__title-kicker">Barbearia</span>
+            <span class="hero__title-main">O Patriarca</span>
+          </h1>
+
+          <p class="hero__lead" data-reveal>
+            Corte clássico ou moderno, barba na <em>navalha</em> e acabamento no detalhe.
+            Ambiente bacana, música boa, bebida gelada e preço justo, perto do metrô Patriarca.
+          </p>
+
+          <a class="rating-pill" href="#avaliacoes" data-reveal>
+            <span class="rating-pill__score">4,9</span>
+            <span class="stars" aria-hidden="true">
+              <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+            </span>
+            <span class="rating-pill__text"><strong>+250 avaliações</strong> no Google</span>
+          </a>
+
+          <div class="hero__actions" data-reveal>
+            <a class="btn btn--gold btn--lg"
+               href="https://booksy.com/pt-br/1047773_barbearia-o-patriarca_barbearias_3081_sao-paulo"
+               target="_blank" rel="noopener noreferrer"
+               data-goatcounter-click="agendar-booksy" data-goatcounter-title="Hero">
+              <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+              Agendar horário
+            </a>
+            <a class="btn btn--ghost btn--lg"
+               href="https://wa.me/5511947296481?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+               target="_blank" rel="noopener noreferrer"
+               data-goatcounter-click="whatsapp" data-goatcounter-title="Hero">
+              <svg class="icon" aria-hidden="true"><use href="#i-whats"/></svg>
+              Chamar no WhatsApp
+            </a>
+          </div>
+
+          <p class="hero__status" data-open-status hidden></p>
+        </div>
+
+        <!-- Selo giratório decorativo -->
+        <div class="hero__seal" aria-hidden="true">
+          <svg class="seal__ring" viewBox="0 0 200 200">
+            <defs><path id="seal-circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#seal-circle" textLength="486" lengthAdjust="spacing">BARBEARIA O PATRIARCA · CIDADE PATRIARCA · SÃO PAULO ·</textPath></text>
+          </svg>
+          <div class="seal__core">
+            <svg class="seal__razor"><use href="#i-razor"/></svg>
+            <span>Zona Leste<br>São Paulo</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#servicos" aria-label="Rolar para os serviços">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Faixa animada com os diferenciais -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Corte clássico</span><span>Degradê navalhado</span><span>Barboterapia</span><span>Música boa</span><span>Bebida gelada</span><span>Preço justo</span><span>Hora marcada</span>
+        <span>Corte clássico</span><span>Degradê navalhado</span><span>Barboterapia</span><span>Música boa</span><span>Bebida gelada</span><span>Preço justo</span><span>Hora marcada</span>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         02 · SERVIÇOS
+         Preços copiados do Booksy. Se mudarem lá, mude aqui também
+         (e no JSON-LD lá em cima, em "hasOfferCatalog").
+         ============================================================ -->
+    <section class="section" id="servicos" aria-labelledby="titulo-servicos">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">01</span> Serviços</p>
+          <h2 class="section__title" id="titulo-servicos">Cortes, barba e <em>acabamento</em></h2>
+          <p class="section__lead">Do corte na máquina ao degradê navalhado. Valores de referência, confirme no agendamento.</p>
+        </header>
+
+        <!-- Destaques: os 3 mais pedidos -->
+        <h3 class="sr-only">Mais pedidos</h3>
+        <ul class="featured" role="list">
+          <li class="card card--feature" data-reveal>
+            <span class="card__tag">Mais pedido</span>
+            <h4 class="card__title">Corte</h4>
+            <p class="card__desc">Corte masculino clássico ou moderno, na tesoura ou máquina, com finalização.</p>
+            <p class="card__meta"><span class="price">R$ 50</span><span class="duration"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>30 min</span></p>
+          </li>
+          <li class="card card--feature card--highlight" data-reveal>
+            <span class="card__tag">Melhor custo</span>
+            <h4 class="card__title">Combo Corte + Barba</h4>
+            <p class="card__desc">O pacote completo: corte do seu estilo e barba alinhada na navalha.</p>
+            <p class="card__meta"><span class="price">R$ 80</span><span class="duration"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>1 h</span></p>
+          </li>
+          <li class="card card--feature" data-reveal>
+            <span class="card__tag">Experiência</span>
+            <h4 class="card__title">Barboterapia</h4>
+            <p class="card__desc">Vapor e lâmina: limpeza de pele, esfoliação, massagem facial, barbear e hidratação.</p>
+            <p class="card__meta"><span class="price">R$ 75</span><span class="duration"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>45 min</span></p>
+          </li>
+        </ul>
+
+        <!-- Tabela completa por categoria (abas) -->
+        <div class="menu-board" data-reveal>
+          <div class="tabs" role="tablist" aria-label="Categorias de serviço" data-tabs>
+            <button class="tabs__btn" type="button" role="tab" id="tab-cortes" aria-controls="painel-cortes" aria-selected="true">Cortes</button>
+            <button class="tabs__btn" type="button" role="tab" id="tab-barba" aria-controls="painel-barba" aria-selected="false" tabindex="-1">Barba</button>
+            <button class="tabs__btn" type="button" role="tab" id="tab-combos" aria-controls="painel-combos" aria-selected="false" tabindex="-1">Combos</button>
+            <button class="tabs__btn" type="button" role="tab" id="tab-acabamentos" aria-controls="painel-acabamentos" aria-selected="false" tabindex="-1">Acabamentos</button>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="painel-cortes" aria-labelledby="tab-cortes" tabindex="0">
+            <h3 class="panel__title">Cortes</h3>
+            <ul class="price-list" role="list">
+              <li><span class="price-list__name">Corte</span><span class="price-list__dots"></span><span class="price-list__time">30 min</span><span class="price-list__price">R$ 50</span></li>
+              <li><span class="price-list__name">Corte “Degradê Navalhado ou Shaver”</span><span class="price-list__dots"></span><span class="price-list__time">30 min</span><span class="price-list__price">R$ 55</span></li>
+              <li><span class="price-list__name">Corte kids <small>(0 a 10 anos)</small></span><span class="price-list__dots"></span><span class="price-list__time">45 min</span><span class="price-list__price">R$ 55</span></li>
+              <li><span class="price-list__name">Corte raspado por inteiro na navalha</span><span class="price-list__dots"></span><span class="price-list__time">30 min</span><span class="price-list__price">R$ 40</span></li>
+              <li><span class="price-list__name">Corte máquina, um tamanho</span><span class="price-list__dots"></span><span class="price-list__time">20 min</span><span class="price-list__price">R$ 35</span></li>
+            </ul>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="painel-barba" aria-labelledby="tab-barba" tabindex="0">
+            <h3 class="panel__title">Barba</h3>
+            <ul class="price-list" role="list">
+              <li><span class="price-list__name">Barboterapia <small>(vapor e lâmina)</small></span><span class="price-list__dots"></span><span class="price-list__time">45 min</span><span class="price-list__price">R$ 75</span></li>
+              <li><span class="price-list__name">Barba</span><span class="price-list__dots"></span><span class="price-list__time">30 min</span><span class="price-list__price">R$ 45</span></li>
+              <li><span class="price-list__name">Limpar pescoço, rosto e aparar o bigode <small>(só máquina, sem navalha)</small></span><span class="price-list__dots"></span><span class="price-list__time">15 min</span><span class="price-list__price">R$ 30</span></li>
+              <li><span class="price-list__name">Abaixar a barba na máquina</span><span class="price-list__dots"></span><span class="price-list__time">10 min</span><span class="price-list__price">R$ 20</span></li>
+            </ul>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="painel-combos" aria-labelledby="tab-combos" tabindex="0">
+            <h3 class="panel__title">Combos</h3>
+            <ul class="price-list" role="list">
+              <li><span class="price-list__name">Corte máquina um tamanho + barboterapia</span><span class="price-list__dots"></span><span class="price-list__time">1 h</span><span class="price-list__price">R$ 90</span></li>
+              <li><span class="price-list__name">Corte todo raspado (navalha) + barboterapia</span><span class="price-list__dots"></span><span class="price-list__time">1 h</span><span class="price-list__price">R$ 90</span></li>
+              <li><span class="price-list__name">Corte + barba</span><span class="price-list__dots"></span><span class="price-list__time">1 h</span><span class="price-list__price">R$ 80</span></li>
+              <li><span class="price-list__name">Corte todo raspado (navalha) + barba</span><span class="price-list__dots"></span><span class="price-list__time">45 min</span><span class="price-list__price">R$ 70</span></li>
+              <li><span class="price-list__name">Corte um tamanho (máquina) + barba</span><span class="price-list__dots"></span><span class="price-list__time">45 min</span><span class="price-list__price">R$ 70</span></li>
+              <!-- CONFIRMAR: o Booksy lista 11 combos; adicione os outros 6 aqui -->
+            </ul>
+            <p class="panel__note">Tem mais combinações no Booksy.</p>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="painel-acabamentos" aria-labelledby="tab-acabamentos" tabindex="0">
+            <h3 class="panel__title">Acabamentos</h3>
+            <ul class="price-list" role="list">
+              <li><span class="price-list__name">Pezinho e sobrancelha</span><span class="price-list__dots"></span><span class="price-list__time">30 min</span><span class="price-list__price">R$ 45</span></li>
+              <li><span class="price-list__name">Pezinho com navalha</span><span class="price-list__dots"></span><span class="price-list__time">30 min</span><span class="price-list__price">R$ 25</span></li>
+              <li><span class="price-list__name">Sobrancelhas</span><span class="price-list__dots"></span><span class="price-list__time">30 min</span><span class="price-list__price">R$ 25</span></li>
+              <li><span class="price-list__name">Pezinho máquina</span><span class="price-list__dots"></span><span class="price-list__time">30 min</span><span class="price-list__price">R$ 20</span></li>
+              <li><span class="price-list__name">Penteado</span><span class="price-list__dots"></span><span class="price-list__time">15 min</span><span class="price-list__price">R$ 20</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-board__foot">
+            <p>Atendimento com <strong>hora marcada</strong>: escolha o serviço, o barbeiro e o horário.</p>
+            <a class="btn btn--gold"
+               href="https://booksy.com/pt-br/1047773_barbearia-o-patriarca_barbearias_3081_sao-paulo"
+               target="_blank" rel="noopener noreferrer"
+               data-goatcounter-click="agendar-booksy" data-goatcounter-title="Serviços">
+              Ver horários livres <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         03 · PORTFÓLIO
+         Para trocar as fotos: substitua os arquivos em
+         assets/img/portfolio/ mantendo os mesmos nomes
+         (corte-01.jpg ... corte-08.jpg) e ajuste o "alt" de cada uma
+         descrevendo o corte (ajuda no Google Imagens).
+         Tamanho ideal: 900 x 1125 px (proporção 4:5), JPG ~150 KB.
+         ============================================================ -->
+    <section class="section section--alt" id="portfolio" aria-labelledby="titulo-portfolio">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">02</span> Portfólio</p>
+          <h2 class="section__title" id="titulo-portfolio">Trabalho que <em>fala</em> por si</h2>
+          <p class="section__lead">Alguns cortes feitos aqui na cadeira. Toque na foto para ampliar.</p>
+        </header>
+
+        <ul class="gallery" role="list" data-gallery>
+          <li class="gallery__item gallery__item--tall" data-reveal>
+            <a href="assets/img/portfolio/corte-01.jpg" data-lightbox>
+              <img src="assets/img/portfolio/corte-01.jpg" width="900" height="1125" loading="lazy" decoding="async"
+                   alt="Degradê navalhado com risco lateral feito na Barbearia O Patriarca">
+            </a>
+          </li>
+          <li class="gallery__item" data-reveal>
+            <a href="assets/img/portfolio/corte-02.jpg" data-lightbox>
+              <img src="assets/img/portfolio/corte-02.jpg" width="900" height="1125" loading="lazy" decoding="async"
+                   alt="Corte social clássico masculino com acabamento na tesoura">
+            </a>
+          </li>
+          <li class="gallery__item" data-reveal>
+            <a href="assets/img/portfolio/corte-03.jpg" data-lightbox>
+              <img src="assets/img/portfolio/corte-03.jpg" width="900" height="1125" loading="lazy" decoding="async"
+                   alt="Barba alinhada na navalha com contorno marcado">
+            </a>
+          </li>
+          <li class="gallery__item gallery__item--tall" data-reveal>
+            <a href="assets/img/portfolio/corte-04.jpg" data-lightbox>
+              <img src="assets/img/portfolio/corte-04.jpg" width="900" height="1125" loading="lazy" decoding="async"
+                   alt="Combo corte e barba em cliente da zona leste de São Paulo">
+            </a>
+          </li>
+          <li class="gallery__item gallery__item--tall" data-reveal>
+            <a href="assets/img/portfolio/corte-05.jpg" data-lightbox>
+              <img src="assets/img/portfolio/corte-05.jpg" width="900" height="1125" loading="lazy" decoding="async"
+                   alt="Corte moderno texturizado no topo com laterais baixas">
+            </a>
+          </li>
+          <li class="gallery__item gallery__item--tall" data-reveal>
+            <a href="assets/img/portfolio/corte-06.jpg" data-lightbox>
+              <img src="assets/img/portfolio/corte-06.jpg" width="900" height="1125" loading="lazy" decoding="async"
+                   alt="Corte infantil feito na Barbearia O Patriarca">
+            </a>
+          </li>
+          <li class="gallery__item" data-reveal>
+            <a href="assets/img/portfolio/corte-07.jpg" data-lightbox>
+              <img src="assets/img/portfolio/corte-07.jpg" width="900" height="1125" loading="lazy" decoding="async"
+                   alt="Cabeça raspada na navalha com acabamento liso">
+            </a>
+          </li>
+          <li class="gallery__item" data-reveal>
+            <a href="assets/img/portfolio/corte-08.jpg" data-lightbox>
+              <img src="assets/img/portfolio/corte-08.jpg" width="900" height="1125" loading="lazy" decoding="async"
+                   alt="Ambiente interno da Barbearia O Patriarca na Cidade Patriarca">
+            </a>
+          </li>
+        </ul>
+
+        <p class="center" data-reveal>
+          <a class="btn btn--ghost"
+             href="https://www.instagram.com/barbearia_o_patriarca/"
+             target="_blank" rel="noopener noreferrer"
+             data-goatcounter-click="instagram" data-goatcounter-title="Portfólio">
+            <svg class="icon" aria-hidden="true"><use href="#i-insta"/></svg>
+            Mais cortes no @barbearia_o_patriarca
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         04 · SOBRE
+         Texto baseado na descrição do próprio Booksy da barbearia.
+         CONFIRMAR: nome do segundo barbeiro e fotos da equipe.
+         ============================================================ -->
+    <section class="section" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="container about">
+        <div class="about__text" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">03</span> Sobre</p>
+          <h2 class="section__title" id="titulo-sobre">Barbearia de <em>respeito</em> na zona leste</h2>
+          <p>
+            A Barbearia O Patriarca é referência em corte masculino na zona leste de São Paulo.
+            Somos especializados em cortes clássicos e modernos, barba e acabamento, com técnica
+            atualizada e atenção a cada detalhe.
+          </p>
+          <p>
+            Aqui o atendimento é com hora marcada, para você chegar, sentar e ser atendido sem fila.
+            O resto fica por conta da casa: ambiente confortável, música boa e bebida gelada.
+          </p>
+
+          <ul class="perks" role="list">
+            <li><strong>Preço justo</strong><span>Serviço caprichado sem pesar no bolso.</span></li>
+            <li><strong>Atendimento profissional</strong><span>Técnica, precisão e conversa boa.</span></li>
+            <li><strong>Ambiente bacana</strong><span>Música boa e bebida gelada.</span></li>
+            <li><strong>Hora marcada</strong><span>Agenda online, sem espera.</span></li>
+          </ul>
+        </div>
+
+        <div class="team" data-reveal>
+          <h3 class="team__title">A equipe</h3>
+          <ul class="team__list" role="list">
+            <li class="barber">
+              <img src="assets/img/equipe/barbeiro-01.jpg" width="600" height="750" loading="lazy" decoding="async"
+                   alt="Marcos, barbeiro da Barbearia O Patriarca">
+              <div class="barber__info">
+                <h4>Marcos</h4>
+                <p>Barbeiro</p>
+              </div>
+            </li>
+            <li class="barber">
+              <img src="assets/img/equipe/barbeiro-02.jpg" width="600" height="750" loading="lazy" decoding="async"
+                   alt="Barbeiro da Barbearia O Patriarca">
+              <div class="barber__info">
+                <!-- TROCAR: nome do segundo barbeiro -->
+                <h4>Nome do barbeiro</h4>
+                <p>Barbeiro</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         05 · AVALIAÇÕES
+         NÃO invente depoimentos. Para incluir avaliações reais,
+         copie do Google e cole dentro de <ul class="reviews">,
+         seguindo o modelo comentado abaixo.
+         ============================================================ -->
+    <section class="section section--alt" id="avaliacoes" aria-labelledby="titulo-avaliacoes">
+      <div class="container">
+        <div class="score" data-reveal>
+          <div class="score__number">
+            <span class="score__value">4,9</span>
+            <span class="stars stars--lg" aria-hidden="true">
+              <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+            </span>
+            <span class="score__count">+250 avaliações no Google</span>
+          </div>
+
+          <div class="score__text">
+            <p class="eyebrow"><span class="eyebrow__num">04</span> Avaliações</p>
+            <h2 class="section__title" id="titulo-avaliacoes">Quem senta na cadeira, <em>volta</em></h2>
+            <p class="section__lead">
+              A nota vem de clientes reais no Google. Já cortou com a gente?
+              Sua avaliação ajuda muito quem está procurando barbearia na zona leste.
+            </p>
+            <div class="score__actions">
+              <!-- TROCAR (opcional): use o link "Pedir avaliações" do Perfil da Empresa no Google
+                   (algo como https://g.page/r/XXXX/review) para abrir direto a janela de avaliar. -->
+              <a class="btn btn--gold"
+                 href="https://www.google.com/maps/search/?api=1&amp;query=Barbearia%20O%20Patriarca%20R.%20Lavras%2028%20S%C3%A3o%20Paulo"
+                 target="_blank" rel="noopener noreferrer"
+                 data-goatcounter-click="avaliar-google" data-goatcounter-title="Avaliações">
+                <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+                Avalie a gente no Google
+              </a>
+              <a class="btn btn--ghost"
+                 href="https://www.google.com/maps/search/?api=1&amp;query=Barbearia%20O%20Patriarca%20R.%20Lavras%2028%20S%C3%A3o%20Paulo"
+                 target="_blank" rel="noopener noreferrer"
+                 data-goatcounter-click="ver-avaliacoes-google" data-goatcounter-title="Avaliações">
+                Ler avaliações <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <ul class="reviews" role="list">
+          <!--
+            MODELO DE AVALIAÇÃO REAL (copie, descomente e preencha):
+
+            <li class="review" data-reveal>
+              <span class="stars" aria-label="5 de 5 estrelas">
+                <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+              </span>
+              <blockquote class="review__text">
+                <p>Texto da avaliação exatamente como está no Google.</p>
+              </blockquote>
+              <p class="review__author">Nome do cliente <span>· Google · mês/ano</span></p>
+            </li>
+          -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         06 · LOCALIZAÇÃO
+         CONFIRMAR: dias e horários. Se mudar aqui, mude também
+         no JSON-LD (topo) e em HORARIOS no assets/js/main.js.
+         ============================================================ -->
+    <section class="section" id="localizacao" aria-labelledby="titulo-local">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">05</span> Como chegar</p>
+          <h2 class="section__title" id="titulo-local">Perto do metrô <em>Patriarca</em></h2>
+        </header>
+
+        <div class="location">
+          <div class="location__info" data-reveal>
+            <div class="info-block">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#i-pin"/></svg>
+              <div>
+                <h3>Endereço</h3>
+                <address>
+                  R. Lavras, 28 · Cidade Patriarca<br>
+                  São Paulo · SP · CEP 03544-120
+                </address>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#i-train"/></svg>
+              <div>
+                <h3>De metrô</h3>
+                <p>Estação <strong>Patriarca</strong>, Linha 3-Vermelha. Pertinho a pé.</p>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#i-clock"/></svg>
+              <div>
+                <h3>Horário</h3>
+                <!-- CONFIRMAR horários com o dono -->
+                <dl class="hours">
+                  <div><dt>Segunda a sábado</dt><dd>10h às 20h</dd></div>
+                  <div><dt>Domingo</dt><dd>Fechado</dd></div>
+                </dl>
+                <p class="hours__status" data-open-status hidden></p>
+              </div>
+            </div>
+
+            <div class="location__actions">
+              <a class="btn btn--gold"
+                 href="https://www.google.com/maps/dir/?api=1&amp;destination=R.%20Lavras%2C%2028%20-%20Cidade%20Patriarca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003544-120"
+                 target="_blank" rel="noopener noreferrer"
+                 data-goatcounter-click="rota-maps" data-goatcounter-title="Localização">
+                Traçar rota <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+              <a class="btn btn--ghost"
+                 href="https://wa.me/5511947296481?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+                 target="_blank" rel="noopener noreferrer"
+                 data-goatcounter-click="whatsapp" data-goatcounter-title="Localização">
+                <svg class="icon" aria-hidden="true"><use href="#i-whats"/></svg> (11) 94729-6481
+              </a>
+            </div>
+          </div>
+
+          <div class="map" data-reveal>
+            <!-- Mapa do Google sem chave de API (modo "embed" público) -->
+            <iframe
+              title="Mapa: Barbearia O Patriarca, R. Lavras, 28 - Cidade Patriarca, São Paulo"
+              src="https://www.google.com/maps?q=Barbearia%20O%20Patriarca%2C%20R.%20Lavras%2C%2028%20-%20Cidade%20Patriarca%2C%20S%C3%A3o%20Paulo%20-%20SP&amp;output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chamada final -->
+    <section class="cta-band" aria-labelledby="titulo-cta">
+      <div class="container cta-band__inner" data-reveal>
+        <h2 class="cta-band__title" id="titulo-cta">Bora dar um trato <em>no visual?</em></h2>
+        <div class="cta-band__actions">
+          <a class="btn btn--gold btn--lg"
+             href="https://booksy.com/pt-br/1047773_barbearia-o-patriarca_barbearias_3081_sao-paulo"
+             target="_blank" rel="noopener noreferrer"
+             data-goatcounter-click="agendar-booksy" data-goatcounter-title="Chamada final">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Agendar horário
+          </a>
+          <a class="btn btn--ghost btn--lg"
+             href="https://wa.me/5511947296481?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+             target="_blank" rel="noopener noreferrer"
+             data-goatcounter-click="whatsapp" data-goatcounter-title="Chamada final">
+            <svg class="icon" aria-hidden="true"><use href="#i-whats"/></svg> WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#inicio">
+          <span class="brand__mark" aria-hidden="true">P</span>
+          <span class="brand__text">O Patriarca<small>Barbearia</small></span>
+        </a>
+        <p>Barbearia na Cidade Patriarca, zona leste de São Paulo.</p>
+      </div>
+
+      <div>
+        <h2 class="footer__title">Contato</h2>
+        <ul class="footer__links" role="list">
+          <li>
+            <a href="https://wa.me/5511947296481" target="_blank" rel="noopener noreferrer"
+               data-goatcounter-click="whatsapp" data-goatcounter-title="Rodapé">
+              <svg class="icon" aria-hidden="true"><use href="#i-whats"/></svg> (11) 94729-6481
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/barbearia_o_patriarca/" target="_blank" rel="noopener noreferrer"
+               data-goatcounter-click="instagram" data-goatcounter-title="Rodapé">
+              <svg class="icon" aria-hidden="true"><use href="#i-insta"/></svg> @barbearia_o_patriarca
+            </a>
+          </li>
+          <li>
+            <a href="https://booksy.com/pt-br/1047773_barbearia-o-patriarca_barbearias_3081_sao-paulo" target="_blank" rel="noopener noreferrer"
+               data-goatcounter-click="agendar-booksy" data-goatcounter-title="Rodapé">
+              <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Agendar pelo Booksy
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer__title">Endereço</h2>
+        <address class="footer__address">
+          R. Lavras, 28 · Cidade Patriarca<br>
+          São Paulo · SP · 03544-120<br>
+          Próximo ao metrô Patriarca
+        </address>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> Barbearia O Patriarca</p>
+      <p>Site desenvolvido por <a href="https://github.com/passetti-cmd" target="_blank" rel="noopener noreferrer">Erick Passetti</a> – Projeto de Extensão USJT</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante de WhatsApp -->
+  <a class="whats-float"
+     href="https://wa.me/5511947296481?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Chamar a Barbearia O Patriarca no WhatsApp"
+     data-goatcounter-click="whatsapp" data-goatcounter-title="Botão flutuante">
+    <svg aria-hidden="true"><use href="#i-whats"/></svg>
+  </a>
+
+  <!-- Lightbox do portfólio (controlado pelo main.js) -->
+  <dialog class="lightbox" aria-label="Foto ampliada do portfólio" data-lightbox-dialog>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" src="" alt="" data-lb-img>
+      <figcaption class="lightbox__caption">
+        <span data-lb-caption></span>
+        <span class="lightbox__count" data-lb-count></span>
+      </figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__close" type="button" aria-label="Fechar" data-lb-close>
+      <svg aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__prev" type="button" aria-label="Foto anterior" data-lb-prev>
+      <svg aria-hidden="true"><use href="#i-prev"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__next" type="button" aria-label="Próxima foto" data-lb-next>
+      <svg aria-hidden="true"><use href="#i-next"/></svg>
+    </button>
+  </dialog>
+</body>
+</html>

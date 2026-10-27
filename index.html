@@ -53,8 +53,8 @@
   <meta name="twitter:image" content="https://passetti-cmd.github.io/barbearia-o-patriarca/assets/img/og-image.jpg">
 
   <!-- Ícones -->
-  <link rel="icon" href="assets/img/icons/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="assets/img/icons/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/icons/favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/img/icons/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
 
@@ -162,7 +162,6 @@
     <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
     <symbol id="i-prev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m15 5-7 7 7 7"/></symbol>
     <symbol id="i-next" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></symbol>
-    <symbol id="i-razor" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 38 12l8 8-28 28z"/><path d="M38 12c4-4 10-4 14 0s4 10 0 14l-6-6"/><path d="M18 48l-6 6M14 36l14 14"/></g></symbol>
   </svg>
 
   <!-- Atalho para quem navega por teclado / leitor de tela -->
@@ -174,7 +173,7 @@
   <header class="header" data-header>
     <div class="container header__inner">
       <a class="brand" href="#inicio" aria-label="Barbearia O Patriarca — início">
-        <span class="brand__mark" aria-hidden="true">P</span>
+        <img class="brand__logo" src="assets/img/logo/logo-dourado.webp" width="480" height="407" alt="">
         <span class="brand__text">O Patriarca<small>Barbearia</small></span>
       </a>
 
@@ -265,10 +264,7 @@
             <defs><path id="seal-circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
             <text><textPath href="#seal-circle" textLength="486" lengthAdjust="spacing">BARBEARIA O PATRIARCA · CIDADE PATRIARCA · SÃO PAULO ·</textPath></text>
           </svg>
-          <div class="seal__core">
-            <svg class="seal__razor"><use href="#i-razor"/></svg>
-            <span>Zona Leste<br>São Paulo</span>
-          </div>
+          <img class="seal__logo" src="assets/img/logo/logo-dourado.webp" width="480" height="407" alt="">
         </div>
       </div>
 
@@ -390,11 +386,10 @@
 
     <!-- ============================================================
          03 · PORTFÓLIO
-         Para trocar as fotos: substitua os arquivos em
-         assets/img/portfolio/ mantendo os mesmos nomes
-         (corte-01.jpg ... corte-08.jpg) e ajuste o "alt" de cada uma
-         descrevendo o corte (ajuda no Google Imagens).
-         Tamanho ideal: 900 x 1125 px (proporção 4:5), JPG ~150 KB.
+         Fotos reais da barbearia, otimizadas pelo
+         scripts/preparar_imagens.py (quadradas, até 900 px).
+         Para trocar: veja documentação/ONDE_EDITAR.md e ajuste o
+         "alt" descrevendo o corte (ajuda no Google Imagens).
          ============================================================ -->
     <section class="section section--alt" id="portfolio" aria-labelledby="titulo-portfolio">
       <div class="container">
@@ -405,52 +400,52 @@
         </header>
 
         <ul class="gallery" role="list" data-gallery>
-          <li class="gallery__item gallery__item--tall" data-reveal>
+          <li class="gallery__item" data-reveal>
             <a href="assets/img/portfolio/corte-01.jpg" data-lightbox>
-              <img src="assets/img/portfolio/corte-01.jpg" width="900" height="1125" loading="lazy" decoding="async"
-                   alt="Degradê navalhado com risco lateral feito na Barbearia O Patriarca">
+              <img src="assets/img/portfolio/corte-01.jpg" width="900" height="900" loading="lazy" decoding="async"
+                   alt="Degradê alto com topo texturizado e barba alinhada, vista de perfil">
             </a>
           </li>
           <li class="gallery__item" data-reveal>
             <a href="assets/img/portfolio/corte-02.jpg" data-lightbox>
-              <img src="assets/img/portfolio/corte-02.jpg" width="900" height="1125" loading="lazy" decoding="async"
-                   alt="Corte social clássico masculino com acabamento na tesoura">
+              <img src="assets/img/portfolio/corte-02.jpg" width="900" height="900" loading="lazy" decoding="async"
+                   alt="Corte infantil com degradê, topete penteado e risco desenhado na lateral">
             </a>
           </li>
           <li class="gallery__item" data-reveal>
             <a href="assets/img/portfolio/corte-03.jpg" data-lightbox>
-              <img src="assets/img/portfolio/corte-03.jpg" width="900" height="1125" loading="lazy" decoding="async"
-                   alt="Barba alinhada na navalha com contorno marcado">
+              <img src="assets/img/portfolio/corte-03.jpg" width="900" height="900" loading="lazy" decoding="async"
+                   alt="Corte com taper na nuca e topo texturizado, vista de costas">
             </a>
           </li>
-          <li class="gallery__item gallery__item--tall" data-reveal>
+          <li class="gallery__item" data-reveal>
             <a href="assets/img/portfolio/corte-04.jpg" data-lightbox>
-              <img src="assets/img/portfolio/corte-04.jpg" width="900" height="1125" loading="lazy" decoding="async"
-                   alt="Combo corte e barba em cliente da zona leste de São Paulo">
+              <img src="assets/img/portfolio/corte-04.jpg" width="836" height="836" loading="lazy" decoding="async"
+                   alt="Cabelo penteado para trás com degradê nas laterais e barba curta">
             </a>
           </li>
-          <li class="gallery__item gallery__item--tall" data-reveal>
+          <li class="gallery__item" data-reveal>
             <a href="assets/img/portfolio/corte-05.jpg" data-lightbox>
-              <img src="assets/img/portfolio/corte-05.jpg" width="900" height="1125" loading="lazy" decoding="async"
-                   alt="Corte moderno texturizado no topo com laterais baixas">
+              <img src="assets/img/portfolio/corte-05.jpg" width="836" height="836" loading="lazy" decoding="async"
+                   alt="Barba cheia modelada com degradê nas laterais">
             </a>
           </li>
-          <li class="gallery__item gallery__item--tall" data-reveal>
+          <li class="gallery__item" data-reveal>
             <a href="assets/img/portfolio/corte-06.jpg" data-lightbox>
-              <img src="assets/img/portfolio/corte-06.jpg" width="900" height="1125" loading="lazy" decoding="async"
-                   alt="Corte infantil feito na Barbearia O Patriarca">
+              <img src="assets/img/portfolio/corte-06.jpg" width="360" height="360" loading="lazy" decoding="async"
+                   alt="Cabelo cacheado com degradê baixo na nuca">
             </a>
           </li>
           <li class="gallery__item" data-reveal>
             <a href="assets/img/portfolio/corte-07.jpg" data-lightbox>
-              <img src="assets/img/portfolio/corte-07.jpg" width="900" height="1125" loading="lazy" decoding="async"
-                   alt="Cabeça raspada na navalha com acabamento liso">
+              <img src="assets/img/portfolio/corte-07.jpg" width="900" height="900" loading="lazy" decoding="async"
+                   alt="Corte social com risco lateral e degradê, finalizado com pomada">
             </a>
           </li>
           <li class="gallery__item" data-reveal>
             <a href="assets/img/portfolio/corte-08.jpg" data-lightbox>
-              <img src="assets/img/portfolio/corte-08.jpg" width="900" height="1125" loading="lazy" decoding="async"
-                   alt="Ambiente interno da Barbearia O Patriarca na Cidade Patriarca">
+              <img src="assets/img/portfolio/corte-08.jpg" width="900" height="900" loading="lazy" decoding="async"
+                   alt="Barbeiro da Barbearia O Patriarca cortando cabelo na tesoura">
             </a>
           </li>
         </ul>
@@ -499,16 +494,17 @@
           <h3 class="team__title">A equipe</h3>
           <ul class="team__list" role="list">
             <li class="barber">
-              <img src="assets/img/equipe/barbeiro-01.jpg" width="600" height="750" loading="lazy" decoding="async"
-                   alt="Marcos, barbeiro da Barbearia O Patriarca">
+              <!-- CONFIRMAR: qual foto é do Marcos -->
+              <img src="assets/img/equipe/barbeiro-01.jpg" width="200" height="250" loading="lazy" decoding="async"
+                   alt="Marcos, barbeiro da Barbearia O Patriarca, cortando cabelo">
               <div class="barber__info">
                 <h4>Marcos</h4>
                 <p>Barbeiro</p>
               </div>
             </li>
             <li class="barber">
-              <img src="assets/img/equipe/barbeiro-02.jpg" width="600" height="750" loading="lazy" decoding="async"
-                   alt="Barbeiro da Barbearia O Patriarca">
+              <img src="assets/img/equipe/barbeiro-02.jpg" width="560" height="700" loading="lazy" decoding="async"
+                   alt="Barbeiro da Barbearia O Patriarca cortando cabelo na tesoura">
               <div class="barber__info">
                 <!-- TROCAR: nome do segundo barbeiro -->
                 <h4>Nome do barbeiro</h4>
@@ -684,7 +680,7 @@
     <div class="container footer__grid">
       <div class="footer__brand">
         <a class="brand" href="#inicio">
-          <span class="brand__mark" aria-hidden="true">P</span>
+          <img class="brand__logo" src="assets/img/logo/logo-dourado.webp" width="480" height="407" alt="">
           <span class="brand__text">O Patriarca<small>Barbearia</small></span>
         </a>
         <p>Barbearia na Cidade Patriarca, zona leste de São Paulo.</p>

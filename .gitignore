@@ -16,3 +16,6 @@ __pycache__/
 .env.*
 *.pem
 *.key
+
+# Fotos originais em alta (pesadas). O site usa as versões otimizadas em assets/img
+fotos_originais/

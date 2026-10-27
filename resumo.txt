@@ -9,7 +9,7 @@
 - Página única com serviços e preços, portfólio com lightbox, sobre, avaliações,
   localização com mapa e botões de agendamento (Booksy) e WhatsApp.
 - Objetivo: presença digital própria, SEO local e mais agendamentos.
-- Status: pronto para revisão com o dono (faltam fotos reais e dados a confirmar).
+- Status: pronto para revisão com o dono (fotos reais aplicadas; faltam dados a confirmar).
 
 ---
 
@@ -19,7 +19,7 @@
 ✅ JavaScript puro (sem bibliotecas)
 ✅ GoatCounter (medição sem cookies, opcional)
 ✅ GitHub Pages (hospedagem)
-✅ Python + Pillow (só para gerar imagens provisórias)
+✅ Python + Pillow (prepara fotos, logo e ícones)
 
 ---
 
@@ -28,5 +28,5 @@
 📂 assets/css/ → estilos
 📂 assets/js/ → interações e configuração
 📂 assets/img/ → fotos, ícones e imagem de compartilhamento
-📂 scripts/ → gerador de imagens provisórias
+📂 scripts/ → preparação das imagens
 📂 documentação/ → publicar, editar, medir, checklist com o dono

@@ -24,18 +24,22 @@ Para adicionar um serviço, copie uma linha `<li>` da lista e altere nome, tempo
 
 ## Fotos
 
-| Foto | Arquivo | Tamanho ideal |
+| Foto | Arquivo no site | Formato |
 | --- | --- | --- |
-| Portfólio | `assets/img/portfolio/corte-01.jpg` … `corte-08.jpg` | 900 × 1125 px (retrato 4:5) |
-| Equipe | `assets/img/equipe/barbeiro-01.jpg`, `barbeiro-02.jpg` | 600 × 750 px |
+| Portfólio | `assets/img/portfolio/corte-01.jpg` … `corte-08.jpg` | quadrada, até 900 px |
+| Equipe | `assets/img/equipe/barbeiro-01.jpg`, `barbeiro-02.jpg` | retrato 4:5 |
+| Logo | `assets/img/logo/logo-dourado.webp` | gerado a partir do logo original |
 | Prévia no WhatsApp | `assets/img/og-image.jpg` | 1200 × 630 px |
 
-1. Substitua o arquivo **mantendo o mesmo nome**.
-2. Comprima antes em [squoosh.app](https://squoosh.app) (JPG, qualidade ~75, menos de 200 KB cada).
-3. No `index.html`, ajuste o `alt` de cada foto descrevendo o corte de verdade (ex.: *"Degradê navalhado com barba desenhada"*). O `alt` ajuda no Google Imagens e em leitores de tela.
-4. Para ter mais ou menos fotos, copie/remova um `<li class="gallery__item">`. As fotos com `gallery__item--tall` ocupam duas linhas.
+As fotos são preparadas por um script, a partir dos originais em `fotos_originais/` (pasta fora do Git, porque os arquivos são pesados):
 
-Peça ao dono fotos com **boa luz e fundo limpo**. Se possível, tiradas sempre do mesmo ângulo.
+1. Coloque a foto nova em `fotos_originais/`.
+2. Em `scripts/preparar_imagens.py`, ajuste a lista `PORTFOLIO` (qual original vira qual `corte-XX.jpg`) ou `EQUIPE` (com o recorte do rosto).
+3. Rode o script (comandos abaixo). Ele recorta, redimensiona e comprime tudo.
+4. No `index.html`, ajuste o `alt` da foto descrevendo o corte de verdade (ex.: *"Degradê navalhado com barba desenhada"*). O `alt` ajuda no Google Imagens e em leitores de tela.
+5. Para ter mais ou menos fotos, copie/remova um `<li class="gallery__item">`. Use múltiplos de 4 (4, 8, 12) para a grade fechar certinha.
+
+Peça ao dono fotos **quadradas, com boa luz**, de preferência mostrando o corte de lado ou de costas.
 
 ## Horários
 
@@ -66,16 +70,14 @@ Para trocar o número de WhatsApp, use buscar e substituir em `5511947296481` no
 
 No bloco **AVALIAÇÕES** do `index.html` há um modelo comentado. Copie, descomente e cole o texto exatamente como está no Google, com o primeiro nome do cliente. Não invente nem edite depoimentos. Enquanto a lista estiver vazia, ela não aparece no site.
 
-## Imagens provisórias
+## Recriar imagens, logo e ícones
 
-Para recriar os placeholders, os ícones ou a `og-image.jpg` (por exemplo, depois de mudar a nota):
+O mesmo script gera o logo dourado, o favicon, os ícones do app e a `og-image.jpg` (rode de novo se mudar a nota ou o logo):
 
 ```bash
 pip install pillow
 ```
 
 ```bash
-python scripts/gerar_imagens.py
+python scripts/preparar_imagens.py
 ```
-
-Cuidado: isso sobrescreve as fotos em `portfolio/` e `equipe/`. Rode só antes de colocar as fotos reais.

@@ -8,7 +8,8 @@ Anotações do projeto.
 
 📌 PENDÊNCIAS
 - Confirmar com o dono: ver documentação/CONFIRMAR_COM_O_DONO.md
-- Trocar fotos provisórias em assets/img/portfolio e assets/img/equipe
+- Fotos reais e logo já aplicados (originais em fotos_originais/, fora do Git)
+- Confirmar qual foto da equipe é o Marcos e o nome do outro barbeiro
 - Criar conta no GoatCounter e colocar o código em assets/js/main.js
 - Publicar no GitHub Pages e enviar sitemap no Search Console
 

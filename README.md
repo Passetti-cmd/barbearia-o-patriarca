@@ -67,17 +67,19 @@ A barbearia tem nota **4,9 no Google com mais de 250 avaliações**, mas a prese
 │   ├── css/style.css       # estilos (tokens de cor no topo)
 │   ├── js/main.js          # interações + CONFIG (GoatCounter e horários)
 │   └── img/
-│       ├── portfolio/      # corte-01.jpg … corte-08.jpg  ← troque pelas fotos reais
+│       ├── portfolio/      # corte-01.jpg … corte-08.jpg (fotos reais otimizadas)
 │       ├── equipe/         # barbeiro-01.jpg, barbeiro-02.jpg
-│       ├── icons/          # favicon e ícones do app
+│       ├── logo/           # logo dourado com fundo transparente (WebP)
+│       ├── icons/          # favicon e ícones do app (feitos do logo)
 │       └── og-image.jpg    # imagem da prévia no WhatsApp/Instagram
 ├── scripts/
-│   └── gerar_imagens.py    # recria placeholders, ícones e og-image (Pillow)
+│   └── preparar_imagens.py # recorta/comprime fotos e gera logo, ícones e og-image
 ├── documentação/
 │   ├── COMO_PUBLICAR.md    # passo a passo GitHub Pages + Google
 │   ├── ONDE_EDITAR.md      # textos, preços, fotos, horários
 │   ├── MEDICAO.md          # GoatCounter e eventos para o relatório
 │   └── CONFIRMAR_COM_O_DONO.md
+├── fotos_originais/        # fotos em alta (fora do Git)
 ├── notas.txt
 └── resumo.txt
 ```
@@ -94,7 +96,7 @@ Depois abra `http://localhost:8000`.
 
 ## Antes de entregar
 
-Alguns dados ainda precisam ser confirmados com o dono (horário, nome do segundo barbeiro, combos que faltam, coordenadas). A lista completa está em [CONFIRMAR_COM_O_DONO.md](documentação/CONFIRMAR_COM_O_DONO.md). No código, procure por `CONFIRMAR` e `TROCAR`.
+Alguns dados ainda precisam ser confirmados com o dono (horário, nomes da equipe, combos que faltam, coordenadas, autorização de uso das fotos). A lista completa está em [CONFIRMAR_COM_O_DONO.md](documentação/CONFIRMAR_COM_O_DONO.md). No código, procure por `CONFIRMAR` e `TROCAR`.
 
 ## Créditos
 

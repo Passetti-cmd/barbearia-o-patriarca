@@ -203,6 +203,14 @@ em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
   letter-spacing: .32em; color: var(--muted);
 }
 
+/* Celulares bem estreitos: marca um pouco menor para não encostar no botão */
+@media (max-width: 359px) {
+  .brand { gap: .4rem; }
+  .brand__logo { height: 32px; }
+  .brand__text { font-size: 1.05rem; }
+  .header__cta { padding-inline: .9rem; }
+}
+
 .menu-toggle {
   position: relative; z-index: 2;
   display: grid; place-items: center;
@@ -288,7 +296,7 @@ body.menu-open { overflow: hidden; }
   min-height: 100vh;
   min-height: 100svh;
   display: flex; align-items: center;
-  padding: calc(var(--header-h) + 2rem) 0 5rem;
+  padding: calc(var(--header-h) + 1rem) 0 5rem;
   overflow: hidden;
   isolation: isolate;
 }
@@ -312,7 +320,7 @@ body.menu-open { overflow: hidden; }
   to { transform: translate3d(-4%, 3%, 0) scale(1.08); }
 }
 
-.hero__inner { position: relative; display: grid; gap: 3rem; align-items: center; }
+.hero__inner { position: relative; display: grid; gap: 2rem; align-items: center; }
 .hero__content { position: relative; z-index: 1; max-width: 640px; }
 
 .hero__eyebrow .icon { width: 1rem; height: 1rem; }
@@ -373,10 +381,13 @@ body.menu-open { overflow: hidden; }
 [data-open-status].is-open::before { background: var(--whats); box-shadow: 0 0 0 4px rgba(37, 211, 102, .18); }
 
 /* Selo giratório */
+/* Selo giratório. No celular fica inteiro, acima do texto;
+   no desktop vai para a coluna da direita (ver @media mais abaixo). */
 .hero__seal {
-  position: absolute; right: -70px; bottom: -3rem; z-index: 0;
-  width: 220px; aspect-ratio: 1;
-  opacity: .22;
+  position: relative; z-index: 0;
+  order: -1;
+  width: clamp(108px, 31vw, 150px); aspect-ratio: 1;
+  margin-bottom: -1rem;
   pointer-events: none;
 }
 .seal__ring {
@@ -415,11 +426,12 @@ body.menu-open { overflow: hidden; }
 }
 
 @media (min-width: 960px) {
-  .hero__inner { grid-template-columns: 1.4fr 1fr; }
+  .hero { padding-top: calc(var(--header-h) + 2rem); }
+  .hero__inner { grid-template-columns: 1.4fr 1fr; gap: 3rem; }
   .hero__seal {
-    position: relative; right: auto; bottom: auto;
+    order: 0;
     width: min(100%, 380px); justify-self: end;
-    opacity: 1;
+    margin-bottom: 0;
   }
 }
 

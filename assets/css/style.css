@@ -177,16 +177,21 @@ em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
 .header {
   position: fixed; inset: 0 0 auto; z-index: 50;
   height: var(--header-h);
-  transition: background-color .35s, border-color .35s, backdrop-filter .35s;
-  border-bottom: 1px solid transparent;
 }
-.header.is-scrolled,
-.header.is-open {
+/* Fundo com desfoque numa camada própria (::before).
+   Se o backdrop-filter ficasse no .header, o menu mobile (position: fixed)
+   ficaria preso dentro da altura do cabeçalho em vez de cobrir a tela. */
+.header::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
   background: rgba(13, 12, 11, .82);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   backdrop-filter: blur(14px) saturate(140%);
-  border-color: var(--line);
+  border-bottom: 1px solid var(--line);
+  opacity: 0;
+  transition: opacity .35s;
 }
+.header.is-scrolled::before { opacity: 1; }
+.header.is-open::before { opacity: 0; }   /* o painel do menu já tem fundo */
 .header__inner { height: 100%; display: flex; align-items: center; gap: 1rem; }
 
 .brand { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; margin-right: auto; }
@@ -259,7 +264,8 @@ em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
 .nav__list a:hover { color: var(--gold-light); }
 .nav__cta-mobile { align-self: flex-start; min-height: 56px; }
 
-.header__cta { position: relative; z-index: 2; }
+.header__cta,
+.header .brand { position: relative; z-index: 2; }   /* ficam por cima do painel do menu */
 
 body.menu-open { overflow: hidden; }
 

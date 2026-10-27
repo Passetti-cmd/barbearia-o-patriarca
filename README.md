@@ -49,7 +49,7 @@ A barbearia tem nota **4,9 no Google com mais de 250 avaliações**, mas a prese
 - **Leve.** Sem frameworks nem bibliotecas; imagens com `loading="lazy"`, `width`/`height` definidos (sem "pulos" de layout) e mapa carregado sob demanda.
 - **Movimento que não trava.** Animações só com `transform`/`opacity`, `IntersectionObserver` para revelar seções, e tudo desligado para quem ativa *reduzir movimento* no sistema.
 - **Acessível.** Um único `h1`, hierarquia de títulos correta, link "pular para o conteúdo", foco visível, abas no padrão ARIA (setas do teclado), lightbox com `<dialog>` (Esc fecha, setas trocam foto, foco volta para a miniatura), contraste AA.
-- **SEO local.** `title` e `description` focados na região, JSON-LD `BarberShop` (endereço, geo, horário, nota, serviços com preço, `sameAs`), Open Graph e Twitter Card, `sitemap.xml` com imagens, `robots.txt`, `canonical`, meta `geo`.
+- **SEO local.** `title` e `description` focados na região, JSON-LD `BarberShop` (endereço, horário, nota, serviços com preço, `sameAs`), Open Graph e Twitter Card, `sitemap.xml` com imagens, `robots.txt`, `canonical`.
 - **Seguro.** Nenhuma chave, senha ou token no código. *Content Security Policy* restringe o que a página pode carregar, links externos com `rel="noopener noreferrer"`, `.gitignore` bloqueando arquivos `.env`.
 - **Medição sem cookies.** GoatCounter opcional (vem desligado) contando visitas e cliques em Agendar, WhatsApp e Avaliar.
 
@@ -78,7 +78,7 @@ A barbearia tem nota **4,9 no Google com mais de 250 avaliações**, mas a prese
 │   ├── COMO_PUBLICAR.md    # passo a passo GitHub Pages + Google
 │   ├── ONDE_EDITAR.md      # textos, preços, fotos, horários
 │   ├── MEDICAO.md          # GoatCounter e eventos para o relatório
-│   └── CONFIRMAR_COM_O_DONO.md
+│   └── CONFIRMAR_COM_O_DONO.md # dados confirmados e decisões
 ├── fotos_originais/        # fotos em alta (fora do Git)
 ├── notas.txt
 └── resumo.txt
@@ -94,9 +94,9 @@ python -m http.server 8000
 
 Depois abra `http://localhost:8000`.
 
-## Antes de entregar
+## Status
 
-Alguns dados ainda precisam ser confirmados com o dono (horário, nomes da equipe, combos que faltam, coordenadas, autorização de uso das fotos). A lista completa está em [CONFIRMAR_COM_O_DONO.md](documentação/CONFIRMAR_COM_O_DONO.md). No código, procure por `CONFIRMAR` e `TROCAR`.
+No ar e com os dados confirmados com a barbearia (horário, contato, equipe, preços e fotos). Detalhes e decisões em [CONFIRMAR_COM_O_DONO.md](documentação/CONFIRMAR_COM_O_DONO.md).
 
 ## Créditos
 

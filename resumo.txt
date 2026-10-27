@@ -9,7 +9,7 @@
 - Página única com serviços e preços, portfólio com lightbox, sobre, avaliações,
   localização com mapa e botões de agendamento (Booksy) e WhatsApp.
 - Objetivo: presença digital própria, SEO local e mais agendamentos.
-- Status: pronto para revisão com o dono (fotos reais aplicadas; faltam dados a confirmar).
+- Status: no ar em https://passetti-cmd.github.io/barbearia-o-patriarca/ para apresentação ao dono.
 
 ---
 

@@ -21,14 +21,12 @@
   <title>Barbearia O Patriarca | Barbearia na Cidade Patriarca, Zona Leste de SP</title>
   <meta name="description" content="Barbearia na Cidade Patriarca, zona leste de SP, perto do metrô Patriarca. Corte masculino clássico e moderno, barba e barboterapia. Nota 4,9 no Google. Agende online.">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <!-- TROCAR: endereço final do site no GitHub Pages (ou domínio próprio) -->
+  <!-- Endereço oficial do site (troque se um dia usar domínio próprio) -->
   <link rel="canonical" href="https://passetti-cmd.github.io/barbearia-o-patriarca/">
 
   <!-- Geolocalização (ajuda buscadores a entender a região) -->
   <meta name="geo.region" content="BR-SP">
   <meta name="geo.placename" content="Cidade Patriarca, São Paulo">
-  <meta name="geo.position" content="-23.5317;-46.5005">
-  <meta name="ICBM" content="-23.5317, -46.5005">
 
   <!-- Cor da barra do navegador no celular -->
   <meta name="theme-color" content="#0d0c0b">
@@ -69,9 +67,7 @@
   <!-- ============================================================
        DADOS ESTRUTURADOS (schema.org / BarberShop)
        Google lê isso para montar o painel da empresa na busca.
-       CONFIRMAR: horários (openingHoursSpecification) e geo
-       (latitude/longitude: pegue no Google Maps clicando com o
-       botão direito no pin da barbearia).
+       Se mudar horário ou preço no site, mude aqui também.
        ============================================================ -->
   <script type="application/ld+json">
   {
@@ -86,7 +82,6 @@
     "telephone": "+55-11-94729-6481",
     "priceRange": "R$ 20 - R$ 90",
     "currenciesAccepted": "BRL",
-    "paymentAccepted": "Dinheiro, Pix, Cartão",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "R. Lavras, 28 - Cidade Patriarca",
@@ -94,11 +89,6 @@
       "addressRegion": "SP",
       "postalCode": "03544-120",
       "addressCountry": "BR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -23.5317,
-      "longitude": -46.5005
     },
     "hasMap": "https://www.google.com/maps/search/?api=1&query=Barbearia%20O%20Patriarca%20R.%20Lavras%2028%20S%C3%A3o%20Paulo",
     "areaServed": [
@@ -111,9 +101,15 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
         "opens": "10:00",
         "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "17:00"
       }
     ],
     "aggregateRating": {
@@ -355,9 +351,7 @@
               <li><span class="price-list__name">Corte + barba</span><span class="price-list__dots"></span><span class="price-list__time">1 h</span><span class="price-list__price">R$ 80</span></li>
               <li><span class="price-list__name">Corte todo raspado (navalha) + barba</span><span class="price-list__dots"></span><span class="price-list__time">45 min</span><span class="price-list__price">R$ 70</span></li>
               <li><span class="price-list__name">Corte um tamanho (máquina) + barba</span><span class="price-list__dots"></span><span class="price-list__time">45 min</span><span class="price-list__price">R$ 70</span></li>
-              <!-- CONFIRMAR: o Booksy lista 11 combos; adicione os outros 6 aqui -->
             </ul>
-            <p class="panel__note">Tem mais combinações no Booksy.</p>
           </div>
 
           <div class="tabs__panel" role="tabpanel" id="painel-acabamentos" aria-labelledby="tab-acabamentos" tabindex="0">
@@ -465,7 +459,6 @@
     <!-- ============================================================
          04 · SOBRE
          Texto baseado na descrição do próprio Booksy da barbearia.
-         CONFIRMAR: nome do segundo barbeiro e fotos da equipe.
          ============================================================ -->
     <section class="section" id="sobre" aria-labelledby="titulo-sobre">
       <div class="container about">
@@ -539,8 +532,6 @@
               Sua avaliação ajuda muito quem está procurando barbearia na zona leste.
             </p>
             <div class="score__actions">
-              <!-- TROCAR (opcional): use o link "Pedir avaliações" do Perfil da Empresa no Google
-                   (algo como https://g.page/r/XXXX/review) para abrir direto a janela de avaliar. -->
               <a class="btn btn--gold"
                  href="https://www.google.com/maps/search/?api=1&amp;query=Barbearia%20O%20Patriarca%20R.%20Lavras%2028%20S%C3%A3o%20Paulo"
                  target="_blank" rel="noopener noreferrer"
@@ -578,8 +569,8 @@
 
     <!-- ============================================================
          06 · LOCALIZAÇÃO
-         CONFIRMAR: dias e horários. Se mudar aqui, mude também
-         no JSON-LD (topo) e em HORARIOS no assets/js/main.js.
+         Horário: se mudar aqui, mude também no JSON-LD (topo)
+         e em HORARIOS no assets/js/main.js.
          ============================================================ -->
     <section class="section" id="localizacao" aria-labelledby="titulo-local">
       <div class="container">
@@ -613,10 +604,10 @@
               <svg class="icon icon--lg" aria-hidden="true"><use href="#i-clock"/></svg>
               <div>
                 <h3>Horário</h3>
-                <!-- CONFIRMAR horários com o dono -->
                 <dl class="hours">
-                  <div><dt>Segunda a sábado</dt><dd>10h às 20h</dd></div>
-                  <div><dt>Domingo</dt><dd>Fechado</dd></div>
+                  <div><dt>Terça a sexta</dt><dd>10h às 20h</dd></div>
+                  <div><dt>Sábado</dt><dd>8h às 17h</dd></div>
+                  <div><dt>Domingo e segunda</dt><dd>Fechado</dd></div>
                 </dl>
                 <p class="hours__status" data-open-status hidden></p>
               </div>

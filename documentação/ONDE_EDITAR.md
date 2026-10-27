@@ -1,6 +1,6 @@
 # Onde editar cada coisa
 
-Dica: no VS Code, `Ctrl+Shift+F` e procure por **`CONFIRMAR`** ou **`TROCAR`** para achar todos os pontos pendentes.
+Dica: no VS Code, `Ctrl+Shift+F` busca um texto em todos os arquivos de uma vez.
 
 ## Textos
 
@@ -43,7 +43,7 @@ Peça ao dono fotos **quadradas, com boa luz**, de preferência mostrando o cort
 
 ## Horários
 
-Estão em **três lugares** (todos marcados com `CONFIRMAR`):
+Estão em **três lugares**. Mudou um, mude os outros:
 
 1. `index.html` → bloco **LOCALIZAÇÃO**, lista `<dl class="hours">` (o que o visitante lê).
 2. `index.html` → JSON-LD, `"openingHoursSpecification"` (o que o Google lê).
@@ -60,9 +60,7 @@ Estão em **três lugares** (todos marcados com `CONFIRMAR`):
 | Booksy | `https://booksy.com/pt-br/1047773_barbearia-o-patriarca_barbearias_3081_sao-paulo` |
 | WhatsApp | `https://wa.me/5511947296481` (com mensagem pronta "Vim pelo site…") |
 | Instagram | `https://www.instagram.com/barbearia_o_patriarca/` |
-| Avalie no Google | busca no Maps; ideal trocar pelo link curto de avaliação (veja abaixo) |
-
-**Link direto para avaliar:** no Perfil da Empresa no Google, o dono clica em **Pedir avaliações** e copia o link (algo como `https://g.page/r/XXXX/review`). Cole no `href` do botão "Avalie a gente no Google".
+| Avalie no Google | abre a barbearia no Google Maps |
 
 Para trocar o número de WhatsApp, use buscar e substituir em `5511947296481` no `index.html`.
 

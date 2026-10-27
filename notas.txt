@@ -6,12 +6,12 @@ Anotações do projeto.
 
 ---
 
-📌 PENDÊNCIAS
-- Confirmar com o dono: ver documentação/CONFIRMAR_COM_O_DONO.md
+📌 STATUS
+- Dados confirmados com o dono (ver documentação/CONFIRMAR_COM_O_DONO.md)
 - Fotos reais e logo já aplicados (originais em fotos_originais/, fora do Git)
 - Equipe: Marcos e Allan Siqueira
 - Criar conta no GoatCounter e colocar o código em assets/js/main.js
-- Publicar no GitHub Pages e enviar sitemap no Search Console
+- Publicado no GitHub Pages (conta Passetti-cmd); falta enviar sitemap no Search Console
 
 ---
 

@@ -31,17 +31,17 @@
 
   /*
     Horário de funcionamento usado no aviso "Aberto agora".
-    CONFIRMAR com o dono. 0 = domingo, 1 = segunda ... 6 = sábado.
+    0 = domingo, 1 = segunda ... 6 = sábado.
     null = fechado. Mantenha igual ao texto do HTML e ao JSON-LD.
   */
   var HORARIOS = {
     0: null,
-    1: ['10:00', '20:00'],
+    1: null,
     2: ['10:00', '20:00'],
     3: ['10:00', '20:00'],
     4: ['10:00', '20:00'],
     5: ['10:00', '20:00'],
-    6: ['10:00', '20:00']
+    6: ['08:00', '17:00']
   };
 
   var DIAS = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];

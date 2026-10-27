@@ -57,7 +57,7 @@ Estão em **três lugares**. Mudou um, mude os outros:
 
 | Link | Valor atual |
 | --- | --- |
-| Booksy | `https://booksy.com/pt-br/1047773_barbearia-o-patriarca_barbearias_3081_sao-paulo` |
+| Booksy | `https://booksy.com/pt-br/3081_barbearia-o-patriarca_barbearias_1047773_sao-paulo` |
 | WhatsApp | `https://wa.me/5511947296481` (com mensagem pronta "Vim pelo site…") |
 | Instagram | `https://www.instagram.com/barbearia_o_patriarca/` |
 | Avalie no Google | abre a barbearia no Google Maps |

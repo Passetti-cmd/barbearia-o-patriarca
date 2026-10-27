@@ -18,7 +18,7 @@ Anotações do projeto.
 📌 DADOS DO NEGÓCIO
 - Endereço: R. Lavras, 28 - Cidade Patriarca, São Paulo - SP, 03544-120
 - WhatsApp: +55 11 94729-6481
-- Booksy: https://booksy.com/pt-br/1047773_barbearia-o-patriarca_barbearias_3081_sao-paulo
+- Booksy: https://booksy.com/pt-br/3081_barbearia-o-patriarca_barbearias_1047773_sao-paulo
   (link curto que o dono usa: bit.ly/opatriarca)
 - Instagram: @barbearia_o_patriarca
 - Google: nota 4,9, ~251 avaliações (out/2026)

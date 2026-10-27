@@ -9,7 +9,7 @@ Anotações do projeto.
 📌 PENDÊNCIAS
 - Confirmar com o dono: ver documentação/CONFIRMAR_COM_O_DONO.md
 - Fotos reais e logo já aplicados (originais em fotos_originais/, fora do Git)
-- Confirmar qual foto da equipe é o Marcos e o nome do outro barbeiro
+- Equipe: Marcos e Allan Siqueira
 - Criar conta no GoatCounter e colocar o código em assets/js/main.js
 - Publicar no GitHub Pages e enviar sitemap no Search Console
 

@@ -4,7 +4,7 @@ Checklist para a conversa com a barbearia. Tudo que está aqui aparece no códig
 
 - [ ] **Horário de funcionamento.** Hoje está "segunda a sábado, 10h às 20h" como estimativa. Confirmar dias, horários e se tem intervalo.
 - [ ] **WhatsApp.** O número (11) 94729-6481 é WhatsApp mesmo? Quem responde?
-- [ ] **Equipe.** Qual das duas fotos é o Marcos e qual o nome do outro barbeiro. Se possível, uma foto melhor do barbeiro da foto preto e branco (a atual é pequena).
+- [x] **Equipe.** Marcos e Allan Siqueira. (Opcional: uma foto maior do Marcos; a atual é pequena.)
 - [ ] **Preços.** Os valores vieram do Booksy. Continuam os mesmos?
 - [ ] **Combos.** O Booksy lista 11 combos e só 5 estão no site. Quais os outros 6?
 - [ ] **Formas de pagamento.** O JSON-LD diz "Dinheiro, Pix, Cartão". Confirmar.
